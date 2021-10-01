@@ -1,5 +1,15 @@
 import React from "react";
 
-const Counter = () => <div>counter</div>;
+// ==========ここから編集する==========
+const Counter = props => {
+  console.log(props);
+
+  return (
+    <div>
+      <div>count</div>
+    </div>
+  );
+};
+// ==========ここまで編集する==========
 
 export default Counter;
