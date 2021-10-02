@@ -6,7 +6,7 @@ const Counter = props => {
 
   return (
     <div>
-      <div>count</div>
+      <div>counter</div>
     </div>
   );
 };
