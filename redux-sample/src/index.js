@@ -6,7 +6,7 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 
 import rootReducer from "./redux/rootReducer";
-import Counter from "./components/Counter/container";
+import Counter from "../../front/src/components/Counter/container";
 
 const store = createStore(rootReducer);
 // ==========ここまで追加する==========

@@ -1,7 +1,7 @@
 // ==========ここから追加する==========
 import { connect } from "react-redux";
 
-import { increment, decrement } from "../../redux/count/actions";
+import { increment, decrement } from "../../../../redux-sample/src/redux/count/actions";
 // ==========ここまで追加する==========
 
 import Counter from "./presentation";
