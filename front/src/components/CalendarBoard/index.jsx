@@ -1,7 +1,9 @@
 import React from "react";
+import { GridList } from "@material-ui/core";
 
-import {GridList} from "@material-ui/core";
+// ==========ここから追加する==========
 import * as styles from "./style.css";
+// ==========ここまで追加する==========
 
 const calendar = [
 	"29",
@@ -45,7 +47,7 @@ const calendar = [
 const CalendarBoard = () => {
   return (
 	  <div className={styles.container}>
-		  <GripList className={Style.grid} cols={7} spacing={0} cellHeight="auto">
+		  <GripList className={styles.grid} cols={7} spacing={0} cellHeight="auto">
 			  {calendar.map(c=>(
 				  <li>
 					  <div className={styles.element}>{c}</div></li>
