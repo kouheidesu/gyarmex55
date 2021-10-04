@@ -8,6 +8,8 @@ import { createStore } from "redux";
 import rootReducer from "./redux/rootReducer";
 import Counter from "../../front/src/components/Counter/container";
 
+
+
 const store = createStore(rootReducer);
 // ==========ここまで追加する==========
 

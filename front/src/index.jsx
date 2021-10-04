@@ -1,16 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-// ==========ここから追加する==========
+import dayjs from "dayjs";
+import "dayjs/locale/ja";
+
+import { Provider } from "react-redux";
+import { createStore } from "redux";
+
+
+dayjs.locale("ja");
+
+
 import CalendarBoard from "./components/CalendarBoard";
-// ==========ここまで追加する==========
+
+import rootReducer from "./redux/rootReducer";
+
+const store = createStore(rootReducer);
 
 const App = () => (
-  // ==========ここから追加する==========
-  <div>
+  <Provider store={store}>
     <CalendarBoard />
-  </div>
-  // ==========ここまで追加する==========
+  </Provider>
 );
 
-ReactDOM.render(<App />, document.getElementById("root"));
+
+
