@@ -34,6 +34,6 @@ const mergeProps = (stateProps, dispatchProps) => ({
 
 export default connect(
 	mapStateToProps,
-	mapDispatchProps,
+	mapDispatchToProps,
 	mergeProps
 )(Navigation);
