@@ -11,7 +11,7 @@ import { createStore } from "redux";
 dayjs.locale("ja");
 
 
-import CalendarBoard from "./components/CalendarBoard/presentation";
+import CalendarBoard from "./components/CalendarBoard/container";
 
 
 import rootReducer from "./redux/rootReducer";
