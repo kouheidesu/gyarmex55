@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import CalendarBoard from "./components/CalendarBoard/container";
+import CalendarBoard from "./presentation";
 import { createCalendar } from "../../services/calendar";
 
 
@@ -12,12 +12,3 @@ const mergeProps = stateProps => ({
   export default connect(mapStateToProps, null, mergeProps)(CalendarBoard);
   
 
-import rootReducer from "./redux/rootReducer";
-
-const store = createStore(rootReducer);
-
-const App = () =>(
-	<Provider store={store}>
-		<CalendarBoard />
-	</Provider>
-);
