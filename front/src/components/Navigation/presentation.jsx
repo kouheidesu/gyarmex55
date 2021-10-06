@@ -6,7 +6,7 @@ import { DatePicker } from "@material-ui/pickers";
 import ArrowBackIos from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIos from "@material-ui/icons/ArrowForwardIos";
 import DehazeIcon from "@material-ui/icons/Dehaze";
-import { Toolbar, Typography } from "@material-ui/core";
+import { IconButton, Toolbar, Typography, withStyles } from "@material-ui/core"
 
 const StyledDatePicker = withStyles({
 	root: { marginLeft: 30 }
@@ -32,6 +32,8 @@ const StyledDatePicker = withStyles({
 		  </IconButton>
 		  <IconButton size="small" onClick={setNextMonth}>
 			<ArrowForwardIos />
+
+
 		  </IconButton>
 		  <StyledDatePicker
 			value={month}
