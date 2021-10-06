@@ -12,7 +12,9 @@ const StyledDatePicker = withStyles({
 	root: { marginLeft: 30 }
   })(DatePicker);
   
-  
+  const StyledTypography = withStyles({
+	root: { margin: "0 30px 0 10px" }
+  })(Typography);
   
   
 
