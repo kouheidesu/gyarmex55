@@ -7,6 +7,9 @@ import "dayjs/locale/ja";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 
+import DayjsUtils from "@date-io/dayjs";
+import { MuiPickersUtilsProvider } from "@material-ui/pickers";
+
 
 dayjs.locale("ja");
 
@@ -20,11 +23,14 @@ import Navigation from "./components/Navigation/container";
 const store = createStore(rootReducer);
 
 const App = () => (
-  <Provider store={store}>
-	  <Navigation />
-    <CalendarBoard />
-  </Provider>
-);
+	<Provider store={store}>
+	  <MuiPickersUtilsProvider utils={DayjsUtils}>
+		<Navigation />
+		<CalendarBoard />
+	  </MuiPickersUtilsProvider>
+	</Provider>
+  );
+  
 
 
 ReactDOM.render(<App />, document.getElementById("root"));
