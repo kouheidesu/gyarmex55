@@ -8,14 +8,17 @@ import ArrowForwardIos from "@material-ui/icons/ArrowForwardIos";
 import DehazeIcon from "@material-ui/icons/Dehaze";
 import { IconButton, Toolbar, Typography, withStyles } from "@material-ui/core"
 
-const StyledDatePicker = withStyles({
-	root: { marginLeft: 30 }
-  })(DatePicker);
+const StyledToolbar = withStyles({
+	root: { padding: "0" }
+  })(Toolbar)
   
   const StyledTypography = withStyles({
-	root: { margin: "0 30px 0 10px" }
-  })(Typography);
+	root: { margin: "0 3px 0 10px" }
+  })(Typography)
   
+  const StyledDatePicker = withStyles({
+	root: { marginLeft: 30 }
+  })(DatePicker);
   
 
   const Navigation = ({ setNextMonth, setPreviousMonth, setMonth, month }) => {
